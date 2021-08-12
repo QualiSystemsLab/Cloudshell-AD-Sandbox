@@ -1,3 +1,3 @@
 #!/bin/bash
 
-realm join --user=$1 $2
+realm join --user=username1 $
