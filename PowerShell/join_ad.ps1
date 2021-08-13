@@ -5,7 +5,8 @@ $defaultGW = Get-NetIPConfiguration -InterfaceIndex $defaultNic[0].ifIndex | For
 # Set DNS Servers
 Set-DNSClientServerAddress -interfaceIndex $defaultNic[0].ifIndex -ServerAddresses $env:AD_IP
 
-Start-Sleep -Seconds 60
+# Sleep wait for AD to finish reboot
+Start-Sleep -Seconds 300
 
 $domain = $env:AD_DOMAIN_NAME
 $password = $env:ADMIN_PASSWORD | ConvertTo-SecureString -asPlainText -Force
