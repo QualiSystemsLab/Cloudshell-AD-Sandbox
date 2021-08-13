@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-sleep 6m
+sleep 7m
 
 sudo echo "$AD_IP $AD_NETBIOS_NAME.$AD_DOMAIN_NAME $AD_NETBIOS_NAME" >> /etc/hosts
 sudo echo "$AD_IP $AD_DOMAIN_NAME $AD_NETBIOS_NAME" >> /etc/hosts
